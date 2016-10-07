@@ -1,0 +1,61 @@
+FAPP:
+
+Database structure:
+
+Probably we need another table for different kind of trainings (non-repetitive) 
+like walking and running.
+
+- users
+  - id
+  - name
+  - email
+  - password
+  - created_at
+  - updated_at
+
+- programs
+  - id
+  - name
+  - user_id
+  - created_at
+  - updated_at
+
+- exercises
+  - id
+  - name
+  - program_id
+  - repeats
+  - series
+  - date
+
+- movements
+  - id
+  - name
+  - duration
+  - description
+  - category
+
+- categories
+  - id
+  - name
+  - visible
+  - category_id
+  - created_at
+  - updated_at
+
+Example:
+
+- movement:
+  - id: 1
+  - name: "Istumaannousu"
+  - duration:
+  - description: "Tehokas tapa treenata vatsalihaksia lähes missä tahansa."
+  - category: 2
+
+- exercise:
+  - id: 1
+  - name:
+  - program_id: 1
+  - repeats: 10
+  - series: 3
+  - date: "2016-10-02"
