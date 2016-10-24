@@ -17,4 +17,10 @@ Route::get('/', function () {
 
 Auth::routes();
 
+// Views
 Route::get('/home', 'HomeController@index');
+Route::get('/program/create', function() { return view('program.create'); });
+
+
+// API
+Route::get('/api/program/create', 'ProgramController@create');

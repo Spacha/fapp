@@ -9,6 +9,8 @@
 
                 <div class="panel-body">
                     You are logged in!
+
+                    <a href="/program/create" type="button" class="btn btn-success pull-right"><i class="fa fa-plus"></i> New program</a>
                 </div>
             </div>
         </div>
